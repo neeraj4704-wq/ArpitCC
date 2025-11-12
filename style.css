@@ -1,0 +1,330 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+.hero {
+  background-image: url('PCTE\ IMAGE.jpg');
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-buttons {
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Job Cards */
+.job-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.job-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.job-meta {
+    display: flex;
+    margin-bottom: 1rem;
+    color: #7f8c8d;
+}
+
+.job-meta span {
+    margin-right: 1rem;
+}
+
+/* Forms */
+.form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+.job-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.job-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.job-listings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.job-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.2s;
+  
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #2a2a2a;
+}
+
+.job-card p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.apply-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.apply-btn:hover {
+  background-color: #0056b3;
+}
+.products h2 {
+  font-size: 4 rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+.product-grid {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding-bottom: 10px;
+  scroll-snap-type: mandatory;
+  transition: transform 0.3s ease;
+  margin-left:184px;
+  margin-right: 184px;
+  margin-bottom: 50px;
+  
+  
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: left;
+  min-width: 300px;
+  scroll-snap-align: start;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  animation: scroll-left 25s linear infinite;
+}
+.product-card:hover {
+  transform:translateY(-5px);
+}
+
+.product-card img {
+ width: 100px; 
+  height: 95%;
+  display: block;
+  margin: 0 auto 15px auto;
+  
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+placements h2 {
+  font-size: 4 rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+.placements-grid {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding-bottom: 10px;
+  scroll-snap-type: mandatory;
+  transition: transform 0.3s ease;
+  margin-left:184px;
+  margin-right: 184px;
+  margin-bottom: 40px;
+  
+  
+}
+
+.placements-card {
+  background: white;
+  display: flex;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: left;
+  min-width: 400px;
+  scroll-snap-align: start;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+ animation: scroll-left 25s linear infinite;
+  height: 274px;
+  
+  
+}
+.placements-card:hover {
+  transform:translateY(-5px);
+}
+
+.placements-card img {
+ width: 100%; 
+  height: 100%;
+  
+  
+  object-fit: cover;   
+  display: block;  
+  
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
